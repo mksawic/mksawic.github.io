@@ -1,0 +1,23 @@
+{
+  "name": "mksawic.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "scripts": {
+    "build": "npm run minify-js && npm run minify-css",
+    "minify-js": "minify ./js/scripts.js > ./js/scripts.min.js",
+    "minify-css": "minify ./css/styles.css > ./css/styles.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mksawic/mksawic.github.io.git"
+  },
+  "author": "Michal Sawicki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mksawic/mksawic.github.io/issues"
+  },
+  "homepage": "https://github.com/mksawic/mksawic.github.io",
+  "devDependencies": {
+    "minify": "^9.2.0"
+  }
+}
