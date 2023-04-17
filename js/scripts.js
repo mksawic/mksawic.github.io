@@ -101,13 +101,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
     contactForm.addEventListener("input", (e) => {
       if (!contactForm.checkValidity()) {
         submitButton.classList.add("disabled");
-      } else submitButton.classList.remove("disabled");
+        submitButton.setAttribute("disabled", "");
+      } else {
+        submitButton.classList.remove("disabled");
+        submitButton.removeAttribute("disabled");
+      }
     });
 
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
       submitButton.classList.add("disabled");
+      submitButton.setAttribute("disabled", "");
       spinner.classList.remove("d-none");
 
       const formData = new FormData(form);
@@ -126,13 +131,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
           errorMessage.classList.add("d-none");
           successMessage.classList.remove("d-none");
           form.reset();
+          submitButton.classList.add("disabled");
+          submitButton.setAttribute("disabled", "");
         })
         .catch(() => {
           errorMessage.classList.remove("d-none");
           successMessage.classList.add("d-none");
+          submitButton.classList.remove("disabled");
+          submitButton.removeAttribute("disabled");
         })
         .finally(() => {
-          submitButton.classList.remove("disabled");
           spinner.classList.add("d-none");
         });
     });

@@ -16,12 +16,12 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Google fonts-->
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap"
       rel="stylesheet"
       type="text/css"
     />
@@ -89,6 +89,8 @@
       <div class="container d-flex align-items-center flex-column">
         <!-- Masthead Avatar Image-->
         <img
+          width="240"
+          height="254"
           class="masthead-avatar mb-5"
           src="assets/img/avataaars.svg"
           alt="..."
@@ -345,6 +347,7 @@
                 style="gap: 8px"
                 id="submitButton"
                 type="submit"
+                disabled
               >
                 <span
                   class="spinner-border spinner-border-sm d-none"
@@ -364,16 +367,18 @@
         <div class="row">
           <!-- Footer Location-->
           <div class="col-lg-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Location</h4>
+            <h3 class="text-uppercase mb-4">Location</h4>
             <p class="lead mb-0">Białystok, Poland</p>
           </div>
           <!-- Footer Social Icons-->
           <div class="col-lg-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <h3 class="text-uppercase mb-4">Around the Web</h4>
             <a
               class="btn btn-outline-light btn-social mx-1"
               href="https://www.linkedin.com/in/mksawic/"
               target="_blank"
+              title="LinkedIn"
+              aria-label="Visit LinkedIn profile"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -393,6 +398,8 @@
               class="btn btn-outline-light btn-social mx-1"
               href="https://github.com/mksawic"
               target="_blank"
+              aria-label="Visit Github page"
+              title="Github"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
@@ -410,6 +417,8 @@
             <a
               class="btn btn-outline-light btn-social mx-1"
               href="mailto:mksawic@gmail.com"
+              title="Email"
+              aria-label="Send email"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
@@ -427,7 +436,7 @@
           </div>
           <!-- Footer About Text-->
           <div class="col-lg-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
+            <h3 class="text-uppercase mb-4">About Freelancer</h4>
             <p class="lead mb-0">
               Freelance is a free to use, MIT licensed Bootstrap theme created
               by
