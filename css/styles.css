@@ -3105,8 +3105,8 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #1a95c1;
-  --bs-btn-border-color: #1a95c1;
+  --bs-btn-color: #157599;
+  --bs-btn-border-color: #157599;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #1a95c1;
   --bs-btn-hover-border-color: #1a95c1;
@@ -11189,7 +11189,7 @@ html {
 }
 .divider-custom .divider-custom-line {
   width: 100%;
-  max-width: 7rem;
+  max-width: 15rem;
   height: 0.25rem;
   background-color: #2c3e50;
   border-radius: 1rem;

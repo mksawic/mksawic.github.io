@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   // Calculate time period for last job
-  const lastJobDate = new Date(2022, 7, 1);
+  const lastJobDate = new Date(2022, 5, 1);
   const timePeriodElement = document.body.querySelector("#time-period");
   if (timePeriodElement) {
     const currentDate = new Date();
