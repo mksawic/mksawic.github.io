@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const months = monthDiff(lastJobDate, currentDate);
     const years = Math.floor(months / 12);
     const yearsText = years ? `${years}y ` : "";
-    const monthsText = months ? `${months}m` : "";
+    const monthsText = months % 12 ? `${months % 12}m` : "";
     timePeriodElement.textContent = `(${yearsText}${monthsText})`;
   }
 
