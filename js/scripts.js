@@ -49,6 +49,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 
+  // Calculate time period overall
+  const firstJobDate = new Date(2020, 8, 1);
+  const experiencePeriodElement =
+    document.body.querySelector("#experience-period");
+  if (experiencePeriodElement) {
+    const currentDate = new Date();
+    const months = monthDiff(firstJobDate, currentDate);
+    const years = Math.floor(months / 12);
+    const yearsText = years ? `${years}y ` : "";
+    const monthsText = months % 12 ? `${months % 12}m` : "";
+    experiencePeriodElement.textContent = `(${yearsText}${monthsText})`;
+  }
+
   // Calculate time period for last job
   const lastJobDate = new Date(2022, 5, 1);
   const timePeriodElement = document.body.querySelector("#time-period");
