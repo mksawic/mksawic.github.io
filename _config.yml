@@ -1,0 +1,22 @@
+title: Michał Sawicki Software Engineer
+tagline: Software Engineer and Frontend Developer
+description: Personal website of Michał Sawicki - Software Engineer and Frontend Developer
+email: mksawic@gmail.com
+baseurl: ""
+url: https://mksawic.github.io
+author: Michal Sawicki
+logo: /assets/logo.webp
+social:
+  name: Michal Sawicki
+  links:
+    - https://www.linkedin.com/in/mksawic
+    - https://github.com/mksawic
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+  sourcemap: never

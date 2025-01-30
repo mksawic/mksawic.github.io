@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Frontend Developer",
+    "company": "The Software House",
+    "href": "https://tsh.io/",
+    "timeRange": "Dec. 2023 - Present",
+    "description": "Working fully with an internal team in Agile methodology on a comprehensive build of one of several products delivered to a foreign client. The entire project consists of over 70 people, but in my product team there are about 10 people working including FE, BE, QA, BA and Scrum."
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "Pagepro",
+    "href": "https://pagepro.co",
+    "timeRange": "July 2022 - Nov. 2023 (1y 5m)",
+    "description": "Working in this position taught me a lot of independence and individuality due to the way of cooperation with many clients based mainly on body-leasing. It required me to familiarize myself with a number of tools that went beyond the area of ​​​​Front-end such as Node.js, Headless CMS and Databases. This work was also based on designing solutions, estimating tasks and direct contact with the main client."
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "LBPro",
+    "href": "https://lbpro.net/",
+    "timeRange": "Apr. 2021 - May 2022 (1y 2m)",
+    "description": "The internal recruitment process allowed me to work as a developer. I still worked in my previous team, but now I focused on delivering new features, fixing bugs, and creating documentation and agreements with the Backend team on the structure and method of exchanging information using Rest API"
+  },
+  {
+    "title": "Quality Assurance",
+    "company": "LBPro",
+    "href": "https://lbpro.net/",
+    "timeRange": "Sep. 2020 - Mar. 2021 (7m)",
+    "description": "First IT job related to software testing. Working in Agile methodology in a team of about 10 people on one of the products delivered for a key client from the US. Main responsibilities were conducting manual tests of applications on the client side and automation of API tests using tools such as Postman."
+  }
+]

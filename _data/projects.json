@@ -1,0 +1,100 @@
+[
+  {
+    "preview": "assets/images/p1.webp",
+    "srcset": "assets/images/p1-400w.webp 400w, assets/images/p1-600w.webp 600w, assets/images/p1-800w.webp 800w, assets/images/p1-1000w.webp 1000w, assets/images/p1-1200w.webp 1200w",
+    "title": "Digital Workforce Management Platform",
+    "technologies": [
+      "React",
+      "Redux",
+      "React Query",
+      "Design System",
+      "Intl",
+      "Rest API",
+      "MSW",
+      "Vite",
+      "Vitest",
+      "Playwright",
+      "CI/CD",
+      "Sonarqube"
+    ],
+    "description": "A workforce management platform aimed at streamlining business operations and employee services. The platform includes features like digital document management, compliance tools, and seamless integration with government regulations.",
+    "values": [
+      "Delivered new features based on client-defined requirements, ensuring alignment with business needs and user expectations.",
+      "Resolved production issues reported through monitoring tools like Hotjar and Sentry, improving user satisfaction and system stability.",
+      "Implemented dynamic language loading, significantly reducing bundle size by loading translation chunks only when the user switched languages.",
+      "Introduced a dependency bot to the repository, streamlining maintenance through automated dependency updates and ensuring project reliability.",
+      "Developed a tool enabling runtime modification of MSW (Mock Service Worker) responses. This empowered the team to simulate various server behaviors, such as HTTP 500 errors, on the mock environment for enhanced testing.",
+      "Improved SonarQube metrics by reducing code smells, eliminating duplicate code, and increasing test coverage, resulting in higher code quality and maintainability."
+    ]
+  },
+  {
+    "preview": "assets/images/p2.webp",
+    "srcset": "assets/images/p2-400w.webp 400w, assets/images/p2-600w.webp 600w, assets/images/p2-800w.webp 800w, assets/images/p2-1000w.webp 1000w, assets/images/p2-1200w.webp 1200w",
+    "title": "Online Learning Platform",
+    "technologies": [
+      "Next.js",
+      "React",
+      "Styled Components",
+      "Strapi",
+      "Shopify",
+      "GraphQL",
+      "Vercel",
+      "Docker",
+      "AWS",
+      "PostgreSQL",
+      "Yarn Workspaces"
+    ],
+    "description": "This platform offering high-quality courses taught by industry-leading professionals in creative fields such as design, illustration, and visual effects. The platform emphasizes a hands-on learning approach, where students can follow along with real-world projects and receive mentorship from experts.",
+    "values": [
+      "Ensured the stability and proper maintenance of the production application, addressing operational and technical needs.",
+      "Resolved critical application issues reported by end-users, enhancing overall user satisfaction and trust.",
+      "Optimized the user login experience by improving the integration with Facebook authentication, ensuring smoother access for users.",
+      "Transitioned from Vercel's image optimization to direct hosting via S3 and CloudFront, significantly reducing Vercel resource consumption and associated costs."
+    ]
+  },
+  {
+    "preview": "assets/images/p3.webp",
+    "srcset": "assets/images/p3-400w.webp 400w, assets/images/p3-600w.webp 600w, assets/images/p3-800w.webp 800w, assets/images/p3-1000w.webp 1000w, assets/images/p3-1200w.webp 1200w",
+    "title": "Software Development Company Website",
+    "technologies": [
+      "Next.js",
+      "React",
+      "Styled Components",
+      "Storyblok",
+      "Vercel",
+      "ISR",
+      "Yarn Workspaces"
+    ],
+    "description": "The official company website for a software development agency specializing in building modern web and mobile applications. The site serves as a hub for showcasing the company's services, portfolio, and expertise. Designed with a focus on performance, responsiveness, and user experience, the website effectively communicates client brand identity and technical capabilities.",
+    "values": [
+      "Fixed bugs and delivered new features to enhance application functionality and user experience.",
+      "Conducted a performance audit and optimized the application to improve PageSpeed and Core Web Vitals metrics, ensuring faster load times and better overall performance.",
+      "Integrated the application with various external tools and services, including SendGrid, Traft, Calendly, Cookiebot, and Dante AI, to extend its capabilities and improve user engagement."
+    ]
+  },
+  {
+    "preview": "assets/images/p4.webp",
+    "srcset": "assets/images/p4-400w.webp 400w, assets/images/p4-600w.webp 600w, assets/images/p4-800w.webp 800w, assets/images/p4-1000w.webp 1000w, assets/images/p4-1200w.webp 1200w",
+    "title": "Various Projects",
+    "technologies": [
+      "Sanity",
+      "Firebase",
+      "Heroku",
+      "Netlify",
+      "Prisma",
+      "DeepL",
+      "ThreeJS",
+      "Docusaurus",
+      "Ant Design",
+      "Tailwind"
+    ],
+    "description": "Participated in numerous short-term projects, where I was responsible for completing specific, well-defined tasks. These engagements often involved direct communication with clients to ensure their satisfaction and address their unique needs. By delivering high-quality solutions efficiently, I fostered strong client relationships, resulting in repeat collaborations and continued trust in my expertise.",
+    "values": [
+      "Implemented automated translation of Sanity documents using the AI-powered tool DeepL, streamlining content localization processes.",
+      "Upgraded the production PostgreSQL database from version 13 to version 16 to meet Heroku's platform requirements, ensuring compatibility and stability.",
+      "Performed a major upgrade of the Ant Design library from version 3 to version 5, enhancing the application's UI/UX and maintaining up-to-date dependencies.",
+      "Developed a simple arcade game using the Three.js library for the client's marketing purposes, creating an engaging and interactive user experience.",
+      "Contributed to the development of a technical documentation application using Docusaurus, supporting the CMS product created by the client and improving developer accessibility."
+    ]
+  }
+]

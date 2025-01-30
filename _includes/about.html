@@ -1,0 +1,36 @@
+<section class="section">
+  <div class="content u-height-100 animate__prevent">
+    <h2
+      class="animate__animated animate__fadeInUp animate__slow text-gradient heading--secondary"
+    >
+      About Me
+    </h2>
+
+    <div class="about background-blur">
+      <img
+        src="{{ site.data.about.image }}"
+        srcset="{{ site.data.about.srcset }}"
+        alt="Me Preview"
+        class="about__image animate__animated animate__fadeInLeft animate__slow"
+        loading="lazy"
+        width="277"
+        height="277"
+      />
+      <p class="animate__animated animate__fadeIn animate__slow">
+        {{ site.data.about.description }}
+      </p>
+    </div>
+
+    <a
+      href="#experience"
+      class="animate__animated animate__fadeIn animate__slow background-blur next-section u-absolute-bottom"
+    >
+      Check my current work experience
+      <div
+        class="animate__animated animate__small-bounce animate__infinite animate__slow"
+      >
+        {% include svg/arrow-down.svg %}
+      </div>
+    </a>
+  </div>
+</section>

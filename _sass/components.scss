@@ -1,0 +1,405 @@
+@use "variables" as *;
+
+// Text Gradient
+.text-gradient {
+  background: linear-gradient(170deg, $primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-radius: 0.25rem;
+}
+
+// Background Blur
+.background-blur {
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  background: rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(2px);
+  display: inline-block;
+}
+
+// Next section link
+.next-section {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  text-align: center;
+  white-space: nowrap;
+  align-self: center;
+  @media (min-width: $breakpoint-lg) {
+    font-size: $font-size-lg;
+  }
+}
+
+// Headings
+.heading--primary {
+  font-size: $font-size-3xl;
+  font-weight: 600;
+}
+
+.heading--secondary {
+  font-size: $font-size-2xl;
+  font-weight: 600;
+}
+
+// Utility Classes
+.u-height-100 {
+  height: 100%;
+}
+
+.u-margin-top {
+  margin-top: 1rem;
+}
+
+.u-absolute-bottom {
+  position: absolute;
+  bottom: 1rem;
+}
+
+// General section content
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  gap: 1rem;
+  margin: auto;
+  width: 100%;
+  max-width: 1024px;
+  padding: 2.5rem;
+
+  @media (min-width: $breakpoint-lg) {
+    gap: 2rem;
+  }
+}
+
+.about {
+  text-align: justify;
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: $font-size-lg;
+  }
+
+  &__image {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    width: 30%;
+    height: auto;
+    margin-right: 1rem;
+    float: left;
+
+    @media (min-width: $breakpoint-md) {
+      float: none;
+      margin-right: 0;
+    }
+  }
+}
+
+// Experience section
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    text-decoration: none;
+    width: 100%;
+    border: 0.0625rem solid $text-color-primary;
+    border-radius: 0.625rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.25);
+    text-align: justify;
+  }
+
+  &__card-title {
+    font-size: $font-size-xl;
+  }
+
+  &__card-company {
+    color: $primary-color;
+    transition: color 0.2s ease-out;
+  }
+
+  &__card-company:hover {
+    color: $secondary-color;
+  }
+
+  &__card-time-range {
+    font-size: $font-size-sm;
+    font-weight: 600;
+  }
+}
+
+// Projects section
+.projects {
+  position: relative;
+  max-width: 1280px;
+  padding: 3rem;
+
+  &__card {
+    width: 100%;
+    border: 0.0625rem solid $text-color-primary;
+    border-radius: 0.625rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.25);
+    gap: 0.5rem;
+    min-height: 100%;
+
+    @media (min-width: $breakpoint-lg) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: fit-content(50%) auto;
+      gap: 1rem;
+      padding: 3rem;
+    }
+  }
+
+  &__image {
+    border-radius: 0.625rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    font-size: $font-size-lg;
+    @media (min-width: $breakpoint-lg) {
+      font-size: $font-size-xl;
+    }
+  }
+
+  &__description {
+    @media (min-width: $breakpoint-lg) {
+      text-align: justify;
+    }
+  }
+
+  &__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+
+    @media (min-width: $breakpoint-lg) {
+      gap: 0.625rem;
+    }
+  }
+
+  &__chip {
+    font-size: $font-size-xs;
+    background-color: $background-color-secondary;
+    padding: 0.25rem 0.625rem;
+    border-radius: 1.25rem;
+    font-weight: 600;
+    color: $primary-color;
+
+    @media (min-width: $breakpoint-lg) {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__value-delivered {
+    grid-area: 2 / 1 / 3 / 3;
+
+    &-title {
+      font-size: $font-size-lg;
+      color: $primary-color;
+
+      @media (min-width: $breakpoint-lg) {
+        font-size: $font-size-xl;
+      }
+    }
+
+    &-list {
+      list-style: disc;
+      margin-left: 1rem;
+    }
+  }
+
+  &__spacer {
+    height: 10%;
+  }
+}
+
+// Contact section
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+
+  @media (min-width: $breakpoint-lg) {
+    height: auto;
+    gap: 4rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__form {
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: $breakpoint-lg) {
+      width: 60%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 100%;
+
+    @media (min-width: $breakpoint-lg) {
+      justify-content: flex-start;
+      gap: 2rem;
+      height: 100%;
+      width: 40%;
+    }
+  }
+
+  &__location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: $font-size-lg;
+    font-weight: 600;
+    white-space: nowrap;
+
+    @media (min-width: $breakpoint-lg) {
+      flex-direction: column;
+    }
+
+    &-label {
+      font-size: $font-size-xl;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: $font-size-2xl;
+    justify-content: space-between;
+
+    &-item {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.25rem;
+      height: 3.25rem;
+      border: 0.0625rem solid $text-color-primary;
+      border-radius: 100%;
+      padding: 0.25rem;
+      gap: 1rem;
+      transition: color 0.2s ease-out, border 0.2s ease-out;
+
+      &:hover {
+        color: $primary-color;
+        border: 0.0625rem solid $primary-color;
+      }
+
+      a {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  @media (min-width: $breakpoint-lg) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content auto min-content min-content;
+    height: 40vh;
+    gap: 1rem;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    label {
+      font-weight: 600;
+    }
+
+    input,
+    textarea {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      transition: outline 0.2s ease-out;
+
+      &:focus {
+        outline: solid $primary-color;
+      }
+    }
+  }
+
+  &__message {
+    grid-area: 2 / 1 / 3 / 3;
+    height: 100%;
+
+    #message {
+      height: 100%;
+    }
+  }
+
+  &__result {
+    grid-area: 3 / 1 / 4 / 3;
+    font-size: $font-size-sm;
+    min-height: 1.5rem;
+    text-align: center;
+  }
+
+  &__submit {
+    grid-area: 4 / 1 / 5 / 3;
+    min-height: 45px;
+    border: 0.0625rem solid $text-color-primary;
+    border-radius: 0.625rem;
+    transition: background-color 0.2s ease-out;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      background-color: $background-color-secondary;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      margin: auto;
+      width: 50%;
+      min-height: 75px;
+    }
+  }
+}

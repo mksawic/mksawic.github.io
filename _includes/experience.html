@@ -1,0 +1,36 @@
+<section class="section">
+  <div class="content animate__prevent">
+    <h2
+      class="animate__animated animate__fadeInUp animate__slow text-gradient heading--secondary"
+    >
+      Experience
+    </h2>
+    <ul class="experience">
+      {% for work in site.data.experience %}
+      <li class="experience__card animate__animated animate__slow">
+        <h3 class="experience__card-title text-gradient">{{ work.title }}</h3>
+        <a
+          href="{{ work.href }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="experience__card-company"
+          >{{ work.company }}</a
+        >
+        <p class="experience__card-time-range">{{ work.timeRange }}</p>
+        <p class="experience__card-description">{{ work.description }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <a
+      href="#projects"
+      class="animate__animated animate__fadeIn animate__slow background-blur next-section u-margin-top"
+    >
+      See projects which I have worked on
+      <div
+        class="animate__animated animate__small-bounce animate__infinite animate__slow"
+      >
+        {% include svg/arrow-down.svg %}
+      </div>
+    </a>
+  </div>
+</section>

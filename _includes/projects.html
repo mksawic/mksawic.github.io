@@ -1,0 +1,57 @@
+<section class="section">
+  <div class="content projects u-height-100 animate__prevent">
+    <h2
+      class="animate__animated animate__fadeInUp animate__slow text-gradient heading--secondary"
+    >
+      Projects
+    </h2>
+
+    {% for project in site.data.projects %}
+    <div class="slide">
+      <div
+        class="projects__card animate__animated animate__fadeIn animate__slow"
+      >
+        <img
+          src="{{ project.preview }}"
+          srcset="{{ project.srcset }}"
+          alt="Project Preview"
+          class="projects__image"
+          sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (min-width: 1001px) 1200px"
+          width="1280"
+          height="720"
+          loading="lazy"
+        />
+        <div class="projects__content">
+          <h3 class="projects__title text-gradient">{{ project.title }}</h3>
+          <ul class="projects__technologies">
+            {% for tech in project.technologies %}
+            <li class="projects__chip">{{ tech }}</li>
+            {% endfor %}
+          </ul>
+          <p class="projects__description">{{ project.description }}</p>
+        </div>
+        <div class="projects__value-delivered">
+          <h4 class="projects__value-delivered-title">Value Delivered:</h4>
+          <ul class="projects__value-delivered-list">
+            {% for value in project.values %}
+            <li class="projects__value-delivered-list-item">{{ value }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="projects__spacer"></div>
+    <a
+      href="#contact"
+      class="animate__animated animate__fadeIn animate__slow background-blur next-section u-absolute-bottom"
+    >
+      Interested? You can contact me
+      <div
+        class="animate__animated animate__small-bounce animate__infinite animate__slow"
+      >
+        {% include svg/arrow-down.svg %}
+      </div>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet';this.removeAttribute('as')" as="style">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    </noscript>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MKSawic" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+
+    <!-- Styles -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.33/dist/fullpage.min.css" integrity="sha256-xrT03wRjvnoI5HcOaCTy8GK9YyrdxZGf3/XRyDlQ8HI=" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet';this.removeAttribute('as')" as="style">
+    <noscript>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.33/dist/fullpage.min.css" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.33/dist/fullpage.min.css" integrity="sha256-xrT03wRjvnoI5HcOaCTy8GK9YyrdxZGf3/XRyDlQ8HI=" crossorigin="anonymous">
+    </noscript>
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+
+    <!-- Seo -->
+    {% feed_meta %}
+    {% seo %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H3MF2F52QC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-H3MF2F52QC');
+    </script>
+
+  </head>
+  <body style="height: 100%; position: relative; overflow: hidden;">
+    <div id="particles-js"></div>
+    <main id="fullpage" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px); transition: transform 700ms;">
+      {{ content }}
+    </main>
+
+    <script defer id="fullpage-script" src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.33/dist/fullpage.min.js" integrity="sha256-KUaDf7GDxWrrg56j4sHHzQLO5Q1r1n4H+riZMdUPtG0=" crossorigin="anonymous"></script>
+    <script id="particles-script" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+</html>

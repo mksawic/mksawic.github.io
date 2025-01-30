@@ -1,0 +1,117 @@
+<div class="section">
+  <div class="content u-height-100 animate__prevent">
+    <h2
+      class="animate__animated animate__fadeInUp animate__slow text-gradient heading--secondary"
+    >
+      Contact
+    </h2>
+
+    <div
+      class="contact background-blur animate__animated animate__fadeIn animate__slow"
+    >
+      <div class="contact__info">
+        <p class="contact__location">
+          <span class="text-gradient">Place of work: </span>
+          Remote / Białystok, Poland
+        </p>
+
+        <ul class="contact__social">
+          <li class="contact__social-item">
+            <a
+              href="https://www.linkedin.com/in/mksawic/"
+              target="_blank"
+              title="LinkedIn"
+              aria-label="Visit LinkedIn profile"
+            >
+              {% include svg/linkedin.svg %}
+            </a>
+          </li>
+          <li class="contact__social-item">
+            <a
+              href="https://github.com/mksawic"
+              target="_blank"
+              aria-label="Visit Github page"
+              title="Github"
+            >
+              {% include svg/github.svg %}
+            </a>
+          </li>
+          <li class="contact__social-item">
+            <a
+              href="mailto:mksawic@gmail.com"
+              title="Email"
+              aria-label="Send email"
+            >
+              {% include svg/envelope.svg %}
+            </a>
+          </li>
+          <li class="contact__social-item">
+            <a
+              href="assets/static/Michal_Sawicki_Software_Engineer.pdf"
+              target="_blank"
+              title="Resume"
+              aria-label="Download resume"
+            >
+              {% include svg/download.svg %}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact__form">
+        <form id="form" class="form" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="333494be-71ea-49d1-a004-316ae0987422"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="Contact from personal website"
+          />
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+
+          <div class="form__group form__name">
+            <label class="text-gradient" for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              required
+              placeholder="Full name"
+            />
+          </div>
+
+          <div class="form__group form__email">
+            <label class="text-gradient" for="email">Email Address</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              required
+              placeholder="Email Address"
+            />
+          </div>
+
+          <div class="form__group form__message">
+            <label class="text-gradient" for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Hello, we are looking for some improvements in our product..."
+            ></textarea>
+          </div>
+
+          <div id="result" class="form__result"></div>
+          <button class="form__submit" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
